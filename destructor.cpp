@@ -2,7 +2,7 @@
 using namespace std;
 class angka
 {
-    
+
 private:
     int *arr;
     int panjang;
@@ -13,3 +13,9 @@ private:
     void cetakData();
     void isiData();
 };
+
+angka::angka(int i){ // Constructor
+    panjang = i;
+    arr = new int[i];
+    isiData();
+}
